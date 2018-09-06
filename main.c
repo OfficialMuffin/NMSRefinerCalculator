@@ -59,23 +59,6 @@ int main()
 
 
     }
-
-
-
-    /*
-    printf("Element 1: %s\n", elements[0]);
-    printf("Element 2: %s\n", elements[1]);
-    printf("Element 3: %s\n", elements[2]);
-    printf("Element 4: %s\n", elements[3]);
-    */
-
-
-
-
-
-
-
-
     //Keep this here!
     return 0;
 }
