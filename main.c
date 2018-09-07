@@ -5,7 +5,7 @@
 #define LINE "______________________________________"
 #define TITLE "WELCOME TO NMS REFINER CALCULATOR!"
 #define BUILD_VERSION "0.2"
-#define STEAM_VERSION "Unknown"
+#define STEAM_VERSION "N3XT 1.57"
 #define AUTHOR "by OfficialMuffin"
 
 //Notices your OS, OwO What's This
