@@ -11,13 +11,17 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - Pure Ferrite Option and Amount
 
 ### Changed
-- Moved some code into seperate void functions to make code easier to read.
+- Moved some code into seperate void functions to make code easier to read
 
 ### Known Issues
 - User input is read but there is no output, only when 
-there is a second input the program then ends.
+there is a second input the program then ends
 
 ## 0.0.1 - 2018-09-06
 ### Added
 - Added Carbon Option and Amount
+
+### Known Issues
+- Version Number shows correctly but also shows a line of numbers below
+- Welcome Message is repeated
 
