@@ -4,7 +4,7 @@
 //Defines Constants
 #define LINE "______________________________________"
 #define TITLE "WELCOME TO NMS REFINER CALCULATOR!"
-#define BUILD_VERSION "0.2"
+#define BUILD_VERSION "             0.3"
 #define STEAM_VERSION "N3XT 1.57"
 #define AUTHOR "by OfficialMuffin"
 
@@ -30,8 +30,8 @@ void elements() {
 
     elements[0] = "a) Carbon";
     elements[1] = "b) Ferrite Dust";
-    elements[2] = "c) Copper";
-    elements[3] = "d) Di-Hydrogen";
+    elements[2] = "c) Copper (NOT AVALIABLE YET)";
+    elements[3] = "d) Di-Hydrogen (NOT AVALIABLE YET)";
 
     printf("Here are the elements you are able to use\n");
 
@@ -49,35 +49,44 @@ int main()
     char choice;
     int amount;
     printf("\nPlease choose from the elements above to place in the Small Refiner e.g 'a': ");
-    scanf("%s\n", &choice);
+    scanf("%c", &choice);
 
-    if (&choice == 'a') {
-        printf("How many do you want to place into the refiner?: ");
-        scanf("%s", &amount);
+    if (choice == 'a') {
+        printf("How much Carbon do you want to place into the refiner?: ");
+        scanf("%d", &amount);
             switch(amount) {
                 case 2 :
-                    printf("You will have 1 Condensed Carbon");
+                    printf("You will have 1 Condensed Carbon\n");
                     break;
                 case 4 :
-                    printf("You will have 2 Condensed Carbon");
+                    printf("You will have 2 Condensed Carbon\n");
+                    break;
+                case 6 :
+                    printf("You will have 3 Condensed Carbon\n");
+                    break;
+                case 8 :
+                    printf("You will have 4 Condensed Carbon\n");
                     break;
                 default :
-                    printf("You are unable to process any more Carbon");
+                    printf("You are unable to process any more Carbon\n");
 
             }
     }
     if (choice == 'b') {
-        printf("How many do you want to place into the refiner?: ");
-        scanf("%s", &amount);
+        printf("How much Ferrite Dust do you want to place into the refiner?: ");
+        scanf("%d", &amount);
             switch(amount) {
-                case 3 :
-                    printf("You will have 2 Pure Ferrite");
+                case 1 :
+                    printf("You will have 1 Pure Ferrite\n");
                     break;
-                case 6 :
-                    printf("You will have 3 Pure Ferrite");
+                case 2 :
+                    printf("You will have 2 Pure Ferrite\n");
+                    break;
+                case 3 :
+                    printf("You will have 3 Pure Ferrite\n");
                     break;
                 default :
-                    printf("You are unable to process any more Pure Ferrite");
+                    printf("You are unable to process any more Pure Ferrite\n");
 
             }
 
