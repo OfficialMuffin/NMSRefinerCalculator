@@ -12,6 +12,9 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 - Input can now be any even integer.
 
+### Known Issues
+- Di-Hydrogen does not yet function
+
 ## 0.0.3 - 2018-09-08
 ### Changed
 - Fixed user input that wasnt being read correctly.
