@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 - Oxygen, Paraffinium an Flora Calculators
 
+### Known Issues
+- You are able to enter a negative number in Flora calculator
+
+### Removed
+- Di-Hydrogen as it was difficult to recreate the ratio
+
 ## 0.0.4 - 2018-09-10
 ### Added
 - Enabled Copper calculator.
