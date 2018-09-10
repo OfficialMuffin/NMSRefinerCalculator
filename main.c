@@ -30,7 +30,7 @@ void elements() {
 
     elements[0] = "a) Carbon";
     elements[1] = "b) Ferrite Dust";
-    elements[2] = "c) Copper (NOT AVALIABLE YET)";
+    elements[2] = "c) Copper";
     elements[3] = "d) Di-Hydrogen (NOT AVALIABLE YET)";
 
     printf("Here are the elements you are able to use\n");
@@ -52,44 +52,49 @@ int main()
     scanf("%c", &choice);
 
     if (choice == 'a') {
-        printf("How much Carbon do you want to place into the refiner?: ");
+        printf("How much Carbon do you want to place into the refiner?");
+        printf("(You MUST enter an even number!): ");
         scanf("%d", &amount);
-            switch(amount) {
-                case 2 :
-                    printf("You will have 1 Condensed Carbon\n");
-                    break;
-                case 4 :
-                    printf("You will have 2 Condensed Carbon\n");
-                    break;
-                case 6 :
-                    printf("You will have 3 Condensed Carbon\n");
-                    break;
-                case 8 :
-                    printf("You will have 4 Condensed Carbon\n");
-                    break;
-                default :
-                    printf("You are unable to process any more Carbon\n");
-
+            if(amount & 0x1) {
+                printf("You are unable to process any more Carbon");
+            }
+            else {
+                printf("You will have %d Condensed Carbon\n", amount / 2);
             }
     }
     if (choice == 'b') {
-        printf("How much Ferrite Dust do you want to place into the refiner?: ");
+        printf("How much Ferrite Dust do you want to place into the refiner?");
+        printf("(You MUST enter an even number!): ");
         scanf("%d", &amount);
-            switch(amount) {
-                case 1 :
-                    printf("You will have 1 Pure Ferrite\n");
-                    break;
-                case 2 :
-                    printf("You will have 2 Pure Ferrite\n");
-                    break;
-                case 3 :
-                    printf("You will have 3 Pure Ferrite\n");
-                    break;
-                default :
-                    printf("You are unable to process any more Pure Ferrite\n");
-
+            if(amount & 0x1) {
+                printf("You are unable to process any more Ferrite Dust");
             }
-
+            else {
+                printf("You will have %d Pure Ferrite\n", amount);
+            }
+    }
+    if (choice == 'c') {
+        printf("How much Copper do you want to place into the refiner?");
+        printf("(You MUST enter an even number!): ");
+        scanf("%d", &amount);
+            if(amount & 0x1) {
+                printf("You are unable to process any more Ferrite Dust");
+            }
+            else {
+                printf("You will have %d Chromatic Metal\n", amount);
+            }
+    }
+     if (choice == 'd') {
+        printf("How much Di-Hydrogen do you want to place into the refiner?");
+        printf("(You MUST enter an even number!): ");
+        scanf("%d", &amount);
+            if(amount & 0x1) {
+                printf("You are unable to process any more Ferrite Dust");
+            }
+            else {
+                    //Recipe 30:1
+                printf("You will have %d Di-Hydrogen Jelly\n", amount);
+            }
     }
 
     //Keep this here!
