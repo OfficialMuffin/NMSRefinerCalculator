@@ -18,8 +18,8 @@ void introduction() {
     //Intro
     printf("\n Your Operating System is: %s \n", SYSTEM);
     printf("\n \t %s \n \t %s \n", LINE, TITLE);
-    printf("\n         Version: \t %s \n \t %d", BUILD_VERSION);
-    printf("\n         NMS Steam Version: \t %s \n \t %s", STEAM_VERSION);
+    printf("\n         Version: \t %s \n \t", BUILD_VERSION);
+    printf("\n         NMS Steam Version: \t %s \n \t", STEAM_VERSION);
     printf("\n \t %s \n \t %s \n", AUTHOR, LINE);
     printf("\n\n\n");
 
