@@ -5,7 +5,7 @@
 #define LINE "______________________________________"
 #define TITLE "WELCOME TO NMS REFINER CALCULATOR!"
 #define BUILD_VERSION "             0.3"
-#define STEAM_VERSION "N3XT 1.57"
+#define STEAM_VERSION "N3XT 1.59"
 #define AUTHOR "by OfficialMuffin"
 #define FLORA "Marrow Bulb, Cactus Flesh, Gamma Root, Solanium"
 
