@@ -5,6 +5,14 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+## 0.0.7 - 2018-09-14
+### Added
+- Mordite Calculators
+
+### Known Issues
+- Mordite is unable to process 3 to output 1 Coprite
+
+
 ## 0.0.6 - 2018-09-12
 ### Added
 - Icon for EXE
