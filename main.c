@@ -26,7 +26,7 @@ void introduction() {
 }
 
 void elements() {
-    const char *elements[6];
+    const char *elements[7];
     int i;
 
     elements[0] = "a) Carbon";
@@ -35,11 +35,12 @@ void elements() {
     elements[3] = "d) Oxygen";
     elements[4] = "e) Paraffinium";
     elements[5] = "f) Any Flora (Cactus Flesh, Gamma Root, Solanium etc..)";
+    elements[6] = "g) Mordite";
 
     printf("Here are the elements you are able to use:\n");
 
     //Print all elements in the array
-    for (i = 0; i < 6; i++) {
+    for (i = 0; i < 7; i++) {
         printf("%s\n", elements[i]);
     }
 }
@@ -120,6 +121,17 @@ int main()
             else if (amount < 0 || amount > 250){
                 printf("You are unable to process any more Flora");
 
+            }
+    }
+    if (choice == 'g') {
+        printf("How much Mordite do you want to place into the refiner?");
+        printf("(You MUST enter a number in multiples of 3!): ");
+        scanf("%d", &amount);
+            if(amount & 0x1) {
+                printf("You are unable to process any more Mordite");
+            }
+            else {
+                printf("You will have %d Coprite\n", amount / 3);
             }
     }
 
