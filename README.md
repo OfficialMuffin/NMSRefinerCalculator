@@ -1,3 +1,5 @@
+[![HitCount](http://hits.dwyl.com/OfficialMuffin/ProjectZeus.svg)](http://hits.dwyl.com/OfficialMuffin/NMSRefinerCalculator)
+
 # NMSRefinerCalculator
 Calculator for the Outputs of Small, Medium and Large Refiners
 
